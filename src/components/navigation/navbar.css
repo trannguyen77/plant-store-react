@@ -1,0 +1,50 @@
+.navbar {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 8vh;
+}
+
+.site-logo {
+    width: auto;
+    height: 100%;
+    width: 50%;
+}
+
+.site-logo img {
+    height: 100%;
+    width: auto;
+}
+
+.menu-bar{
+    width: 50%;
+}
+
+.menu-bar ul{
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100%;
+    align-items: center;
+    list-style: none;
+}
+
+.menu-bar ul a{
+    width: auto;
+    color: var(--main-color);
+    padding: 2% 4% 2% 4%;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.menu-bar ul a img{
+    width: 20px;
+}
+
+.menu-bar ul a:hover{
+    background-color: var(--main-color);
+    color:white;
+}
+
+.menu-bar ul a:focus{
+    outline-style:none;
+    border-style: none;
+}
