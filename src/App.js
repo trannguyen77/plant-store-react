@@ -6,7 +6,7 @@ import Home from "./containers/home/home";
 import Shop from "./containers/products/shop";
 import Blog from "./containers/blog/blog";
 import Contact from "./containers/contact/contact";
-import Cart from "./containers/cart/cart";
+import Cart from "./containers/cart/shopping-cart-container";
 import Search from './containers/search/search.js'
 
 function App() {

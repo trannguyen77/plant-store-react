@@ -6,7 +6,7 @@ import products from '../../products-data.json';
 function Shop() {
   return (
     <div className='container'>
-        <h1>All Products</h1>
+        <h1 className='page-title'  style={{textAlign: 'center'}}>All Products</h1>
         <div className='products-container'>
           {Object.keys(products).map((id)=>{
             return(

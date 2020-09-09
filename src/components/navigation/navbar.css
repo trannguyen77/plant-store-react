@@ -5,14 +5,13 @@
 }
 
 .site-logo {
-    width: auto;
     height: 100%;
     width: 50%;
 }
 
 .site-logo img {
-    height: 100%;
-    width: auto;
+    height: auto;
+    width: 200px;
 }
 
 .menu-bar{

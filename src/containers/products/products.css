@@ -64,7 +64,7 @@ color: var(--main-color);
 .product-card h3{
     font-size: 1.2rem;
     line-height: 1.2rem;
-    margin-left: 5px;
+    margin: 0 5px 0 5px;
     padding-right: 50px;
     font-weight: bold;
     color: #FFFFFF;
@@ -80,7 +80,7 @@ color: var(--main-color);
 }
 
 .product-price{
-    float:right;
+    float: right;
     margin-right: 20px;
     font-size: 1.5rem;
     color: var(--second-color)

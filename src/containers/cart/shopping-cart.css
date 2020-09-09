@@ -1,0 +1,44 @@
+/*CART*/
+.cart-container{
+    width: 60%;
+}
+
+.cart table{
+    width: 100%;
+    color: var(--body-text);
+}
+
+.cart th{
+    height: 40px;
+    vertical-align: center;
+    border-bottom: 1px solid #D8D8D8;
+}
+
+.cart td{
+    height: 60px;
+    vertical-align: center;
+    border-bottom: 1px solid #D8D8D8;
+}
+.cart tr{
+    width: 100%;
+}
+
+.cart th{
+text-align: left;
+}
+
+.item{
+    width: 50%;
+}
+
+.price{
+    width: 16.5%;
+}
+
+.quantity{
+    width: 16.5%;
+}
+
+.total{
+    width: 16.5%;
+}
