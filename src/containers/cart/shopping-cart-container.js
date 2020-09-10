@@ -1,16 +1,15 @@
 import React from "react";
 import "./shopping-cart.css";
-import CartTable from './cart-table';
+import CartTable from "./cart-table";
+import OrderSummary from "./order-summary";
 
 function ShoppingCart() {
   return (
     <div className="container">
       <h1 className="page-title">Shopping Cart</h1>
-      <div className="cart-container">
+      <div className="shopping-container">
         <CartTable/>
-      </div>
-      <div className="order-container">
-        <div className="order-box"></div>
+        <OrderSummary/>
       </div>
     </div>
   );

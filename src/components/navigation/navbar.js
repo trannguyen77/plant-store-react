@@ -8,7 +8,7 @@ import Home from "../../containers/home/home";
 
 function NavBar() {
   return (
-    <nav className="navbar">
+    <nav className="navbar"> 
       <Link className="site-logo" to="/">
         <a>
           <img src={icon} alt="logo"></img>
