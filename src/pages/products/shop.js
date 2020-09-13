@@ -3,9 +3,9 @@ import './products.css';
 import SingleProduct from './single-product';
 import products from '../../products-data.json';
 
-function Shop() {
+function ProductPage() {
   return (
-    <div className='container'>
+    <div className='page-container'>
         <h1 className='page-title'  style={{textAlign: 'center'}}>All Products</h1>
         <div className='products-container'>
           {Object.keys(products).map((id)=>{
@@ -17,4 +17,4 @@ function Shop() {
   );
 }
 
-export default Shop;
+export default ProductPage;

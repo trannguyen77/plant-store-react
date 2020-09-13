@@ -1,6 +1,6 @@
 import React from "react";
 
-function OrderSummary(props) {
+function OrderSummary() {
   return (
     <div className="order-container">
       <div className="order-box">

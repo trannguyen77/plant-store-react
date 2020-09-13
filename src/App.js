@@ -6,12 +6,12 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { faBars,faShoppingBag,faSearch,faTimes } from '@fortawesome/free-solid-svg-icons';
 //Import components
 import NavBar from "./components/navigation/navbar";
-import Home from "./containers/home/home";
-import Shop from "./containers/products/shop";
-import Blog from "./containers/blog/blog";
-import Contact from "./containers/contact/contact";
-import Cart from "./containers/cart/shopping-cart-container";
-import Search from './containers/search/search.js'
+import Home from "./pages/home/home";
+import Blog from "./pages/blog/blog";
+import Contact from "./pages/contact/contact";
+import Cart from "./pages/cart/shopping-cart-container";
+import Search from './pages/search/search.js';
+import ProductPage from "./pages/products/shop";
 
 function App() {
   //add font to global library
@@ -23,7 +23,7 @@ function App() {
         <NavBar />
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/shop" component={Shop} />
+          <Route path="/shop" component={ProductPage} />
           <Route path="/blog" component={Blog} />
           <Route path="/cart" component={Cart} />
           <Route path="/search" component={Search} />

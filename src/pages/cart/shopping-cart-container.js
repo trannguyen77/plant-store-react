@@ -5,7 +5,7 @@ import OrderSummary from "./order-summary";
 
 function ShoppingCart() {
   return (
-    <div className="container">
+    <div className="page-container">
       <h1 className="page-title">Shopping Cart</h1>
       <div className="shopping-container">
         <CartTable/>

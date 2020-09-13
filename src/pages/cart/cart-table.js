@@ -34,7 +34,7 @@ function CartTable() {
             <td style={{ fontWeight: "bold", textAlign: "center" }}>$50</td>
             <td className="item-qnt"> 10 </td>
             <td className="item-total">$500</td>
-          </tr>
+          </tr>          
         </tbody>
       </table>
     </div>

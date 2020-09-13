@@ -1,23 +1,31 @@
+.nav-container{
+  width: 100%;
+ position: sticky;
+  z-index: 100;
+  top:0;
+  background-color: white;
+  filter: drop-shadow(0px 0px 5px rgba(196, 196, 196, 0.5));
+}
 nav {
-  padding: 10px 0px 0px 10px;
   margin: auto;
+  padding: 10px 0px 0px 10px;
   width: 100%;
   max-width: 1300px;
   height: 70px;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  position: sticky;
+
 }
 
-.site-logo{
+.site-logo {
   width: 150px;
   cursor: pointer;
 }
-.site-logo img{
-  width:150px;
+.site-logo img {
+  width: 150px;
 }
-.bar-menu{
+.bar-menu {
   display: none;
   justify-self: flex-end;
   font-size: 1.2rem;
@@ -27,25 +35,25 @@ nav {
 nav ul {
   display: flex;
   width: 50%;
-
-justify-self: flex-end;
-list-style: none;
-justify-content: flex-end;
+  justify-self: flex-end;
+  list-style: none;
+  justify-content: flex-end;
 }
-nav ul li a{
+nav ul li a {
   display: block;
   font-size: 1.2rem;
   color: var(--main-color);
   text-decoration: none;
   padding: 10px 20px;
 }
-nav ul li a:hover{
+nav ul li a:hover {
   background-color: var(--main-color);
   color: white;
 }
 
-@media screen and (max-width: 900px){
-  nav{
+@media screen and (max-width: 900px) {
+  nav {
+    margin: 0;
     height: 70px;
   }
   nav ul {
@@ -53,33 +61,34 @@ nav ul li a:hover{
     flex-direction: column;
     justify-content: flex-start;
     position: absolute;
-    top:70px;
+    top: 70px;
     width: 100vw;
     height: fit-content;
     background-color: var(--main-color);
     left: -150%;
-    opacity: 1;
-    transition: all 0.5s ease;
+    transition: all 0.8s ease;
+    opacity: 0.95;
+    z-index: 100;
   }
-  nav ul.active{
+  nav ul.active {
+    opacity: 0.95;
     left: 0;
-    opacity: 1;
-    transition: all 0.6s ease;
-    z-index:999;
+    transition: all 1s ease;
+    z-index: 100;
   }
-  nav ul li{
+  nav ul li {
     height: 60px;
     position: relative;
   }
-  nav ul li a:first-child{
-    margin-top:10px;
+  nav ul li a:first-child {
+    margin-top: 10px;
   }
-  nav ul li a{
+  nav ul li a {
     color: white;
     text-align: center;
     width: 100%;
   }
-  nav ul li a:hover{
+  nav ul li a:hover {
     font-weight: bold;
     transform: scale(1.2);
     transition: all 0.3s ease;
@@ -87,8 +96,7 @@ nav ul li a:hover{
     color: var(--main-color);
   }
 
-
-  .bar-menu{
+  .bar-menu {
     display: block;
   }
 }
