@@ -1,6 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
+//Import Font Awesome
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faBars,faShoppingBag,faSearch,faTimes } from '@fortawesome/free-solid-svg-icons';
+//Import components
 import NavBar from "./components/navigation/navbar";
 import Home from "./containers/home/home";
 import Shop from "./containers/products/shop";
@@ -10,6 +14,9 @@ import Cart from "./containers/cart/shopping-cart-container";
 import Search from './containers/search/search.js'
 
 function App() {
+  //add font to global library
+  library.add(faBars,faShoppingBag,faSearch,faTimes);
+  
   return (
     <Router>
       <div className="App">

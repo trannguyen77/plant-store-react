@@ -1,47 +1,54 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import icon from "./img/logo-icon.png";
-import searchIcon from "./img/search-icon.png";
-import cartIcon from "./img/cart-icon.png";
 import "./navbar.css";
-import Home from "../../containers/home/home";
 
 function NavBar() {
-  return (
-    <nav className="navbar"> 
-      <Link className="site-logo" to="/">
-        <a>
-          <img src={icon} alt="logo"></img>
-        </a>
-      </Link>
+  //show nav on mobile
+  const [navClick, setNavClick] = useState(false);
+  const handleNavClick = () => setNavClick(!navClick);
 
-      <div className="menu-bar">
-        <ul>
-          <Link to="/">
-            <li>Home</li>
-          </Link>
-          <Link to="/shop">
-            <li>Shop</li>
-          </Link>
-          <Link to="/blog">
-            <li>Blog</li>
-          </Link>
-          <Link to="/contact">
-            <li>Contact</li>
-          </Link>
+  return (
+    <nav>
+      <div className="site-logo">
+      <Link  to="/">
+        <img src={icon} alt="logo"></img>
+      </Link>
+        </div>
+      <div  className='bar-menu'onClick={handleNavClick}>
+          {navClick ? (
+            <FontAwesomeIcon icon="times" />
+          ) : (
+            <FontAwesomeIcon icon="bars" />
+          )}</div>
+      <ul className={navClick ? 'active':''}>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/shop">Shop</Link>
+        </li>
+        <li>
+          <Link to="/blog">Blog</Link>
+        </li>
+        <li>
+          <Link to="/contact">Contact</Link>
+        </li>
+        <li>
           <Link to="/cart">
-            <li>
-              <img src={cartIcon} alt="cart"></img>
-              <span> 0</span>
-            </li>
+            <FontAwesomeIcon icon="shopping-bag" />
+            <span> 0</span>
           </Link>
+        </li>
+        <li>
           <Link to="/search">
-            <li>
-              <img src={searchIcon} alt="search"></img>
-            </li>
+            <FontAwesomeIcon icon="search" />
           </Link>
-        </ul>
-      </div>
+        </li>
+
+
+      </ul>
     </nav>
   );
 }

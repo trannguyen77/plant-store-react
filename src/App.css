@@ -1,13 +1,16 @@
-:root{
+* {
   font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   --main-color: #3B988E;
   --second-color: #EAFFAD;
   --body-text: #8A8A8A;
 }
 
 .App{
-  width: 83.3vw;
   margin: auto;
+  background-color: white;
 }
 
 .page-title{
@@ -15,10 +18,11 @@
   font-weight: bold;
   line-height: 2rem;
   color: var(--main-color);
-  margin: 5vh auto 5vh auto;
+  margin: 50px auto 20px auto;
 }
 
 @media only screen and (max-width: 600px){
+
   .page-title{
     text-align: center;
   }

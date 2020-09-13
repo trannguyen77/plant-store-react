@@ -1,49 +1,94 @@
-.navbar {
+nav {
+  padding: 10px 0px 0px 10px;
+  margin: auto;
+  width: 100%;
+  max-width: 1300px;
+  height: 70px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: sticky;
+}
+
+.site-logo{
+  width: 150px;
+  cursor: pointer;
+}
+.site-logo img{
+  width:150px;
+}
+.bar-menu{
+  display: none;
+  justify-self: flex-end;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  color: var(--main-color);
+}
+nav ul {
+  display: flex;
+  width: 50%;
+
+justify-self: flex-end;
+list-style: none;
+justify-content: flex-end;
+}
+nav ul li a{
+  display: block;
+  font-size: 1.2rem;
+  color: var(--main-color);
+  text-decoration: none;
+  padding: 10px 20px;
+}
+nav ul li a:hover{
+  background-color: var(--main-color);
+  color: white;
+}
+
+@media screen and (max-width: 900px){
+  nav{
+    height: 70px;
+  }
+  nav ul {
     display: flex;
-    flex-wrap: nowrap;
-    height: 8vh;
-}
-
-.site-logo {
-    height: 100%;
-    width: 50%;
-}
-
-.site-logo img {
-    height: auto;
-    width: 200px;
-}
-
-.menu-bar{
-    width: 50%;
-}
-
-.menu-bar ul{
-    display: flex;
-    flex-wrap: nowrap;
-    height: 100%;
-    align-items: center;
-    list-style: none;
-}
-
-.menu-bar ul a{
-    width: auto;
-    color: var(--main-color);
-    padding: 2% 4% 2% 4%;
-    font-size: 1.2rem;
-    text-decoration: none;
-}
-
-.menu-bar ul a img{
-    width: 20px;
-}
-
-.menu-bar ul a:hover{
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+    top:70px;
+    width: 100vw;
+    height: fit-content;
     background-color: var(--main-color);
-    color:white;
-}
+    left: -150%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+  nav ul.active{
+    left: 0;
+    opacity: 1;
+    transition: all 0.6s ease;
+    z-index:999;
+  }
+  nav ul li{
+    height: 60px;
+    position: relative;
+  }
+  nav ul li a:first-child{
+    margin-top:10px;
+  }
+  nav ul li a{
+    color: white;
+    text-align: center;
+    width: 100%;
+  }
+  nav ul li a:hover{
+    font-weight: bold;
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+    background-color: white;
+    color: var(--main-color);
+  }
 
-.menu-bar ul a:focus{
-    outline-style:none;
-    border-style: none;
+
+  .bar-menu{
+    display: block;
+  }
 }
