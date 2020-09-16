@@ -1,12 +1,13 @@
-import React from 'react';
+import React from "react";
+import HeaderSection from "../../components/home-header";
+import CategoryTab from '../../components/category-tab';
+import { headerData } from "./data";
 
 function Home() {
-  return (
-    <div>
-        <h1>Home Page</h1>
-
-    </div>
-  );
+  return (<>
+  <HeaderSection {...headerData} />
+  <CategoryTab />
+  </>)
 }
 
 export default Home;

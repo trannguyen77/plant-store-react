@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import icon from './logo-icon.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import icon from "./img/logo-icon.png";
 import "./navbar.css";
 
 function NavBar() {

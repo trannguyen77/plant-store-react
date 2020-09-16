@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../../components/template-components";
 
 function OrderSummary() {
   return (
@@ -9,30 +10,32 @@ function OrderSummary() {
         </div>
         <div className="order-summary">
           <div className="summary">
-              <table>
-                  <tr>
-                      <td>Subtotal:</td>
-                      <td className='right-col'>$500</td>
-                  </tr>
-                  <tr>
-                      <td>VAT (10%):</td>
-                      <td className='right-col'>$50</td>
-                  </tr>
-                  <tr>
-                      <td>Shipping:</td>
-                      <td className='right-col'>$50</td>
-                  </tr>
-                  <tr id="space"></tr>
-              </table>
+            <table>
+              <tr>
+                <td>Subtotal:</td>
+                <td className="right-col">$500</td>
+              </tr>
+              <tr>
+                <td>VAT (10%):</td>
+                <td className="right-col">$50</td>
+              </tr>
+              <tr>
+                <td>Shipping:</td>
+                <td className="right-col">$50</td>
+              </tr>
+              <tr id="space"></tr>
+            </table>
           </div>
           <div className="grand-total">
-              <table>
+            <table>
               <td>Grand Total:</td>
-            <td className='right-col'>$550</td>
-              </table>
+              <td className="right-col">$550</td>
+            </table>
           </div>
         </div>
-        <button className="checkout-btn">Check out</button>
+        <div className="checkout-btn">
+          <Button btnLabel="Check Out" />
+        </div>
       </div>
     </div>
   );

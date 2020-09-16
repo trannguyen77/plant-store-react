@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import './products.css';
 import SingleProduct from './single-product';
 import products from '../../products-data.json';
+import { faThermometerEmpty } from '@fortawesome/free-solid-svg-icons';
 
 function ProductPage() {
   return (
