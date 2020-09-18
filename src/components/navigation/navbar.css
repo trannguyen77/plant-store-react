@@ -4,11 +4,9 @@
   z-index: 100;
   top:0;
   background-color: white;
-  filter: drop-shadow(0px 0px 5px rgba(196, 196, 196, 0.5));
 }
 nav {
-  margin: auto;
-  padding: 0;
+  margin: 0 auto;
   width: 100%;
   max-width: 1300px;
   height: 55px;
@@ -43,11 +41,12 @@ nav ul li a {
   font-size: 1.2rem;
   color: var(--main-color);
   text-decoration: none;
-  padding: 13px 20px;
+  padding: 15px 20px;
 }
 nav ul li a:hover {
   background-color: var(--main-color);
   color: white;
+  transition: .5s;
 }
 
 
@@ -61,20 +60,20 @@ nav ul li a:hover {
     flex-direction: column;
     justify-content: flex-start;
     position: absolute;
-    top: 50px;
     width: 100vw;
     height: fit-content;
     background-color: var(--main-color);
-    left: -150%;
+    top: -100vh;
+    transform: scaleY(0.5);
     transition: all 0.6s ease;
     opacity: 0.95;
-    z-index: 100;
+    z-index: 99;
   }
   nav ul.active {
     opacity: 0.95;
-    left: 0;
+    top: 0;
     transition: all 0.6s ease;
-    z-index: 100;
+    transform: scaleY(1);
   }
   nav ul li {
     height: 60px;
@@ -97,6 +96,7 @@ nav ul li a:hover {
 
   .bar-menu {
     display: block;
+    z-index: 100;
   }
 
 }

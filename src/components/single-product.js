@@ -1,10 +1,10 @@
 import React from 'react';
-import './products.css';
+import '../pages/products/products.css';
 
 function SingleProduct ({product}) {
     return(
             <div className='single-product-container'>
-                <img src={product.img} className='product-img'></img>
+                <img src={product.img} alt={product.id} className='product-img'></img>
                 <div className='product-card'>
                     <div className='buy-btn'>
                         <span>+</span>

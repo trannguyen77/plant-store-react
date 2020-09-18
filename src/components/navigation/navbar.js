@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import icon from './logo-icon.png';
+import icon from "./logo-icon.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./navbar.css";
 
@@ -20,7 +20,7 @@ function NavBar() {
         </div>
         <div className="bar-menu" onClick={handleNavClick}>
           {navClick ? (
-            <FontAwesomeIcon icon="times" />
+            <FontAwesomeIcon icon="times" style={{ color: "white" }} />
           ) : (
             <FontAwesomeIcon icon="bars" />
           )}
@@ -34,16 +34,6 @@ function NavBar() {
           <li>
             <Link to="/shop" onClick={closeMenu}>
               Shop
-            </Link>
-          </li>
-          <li>
-            <Link to="/blog" onClick={closeMenu}>
-              Blog
-            </Link>
-          </li>
-          <li>
-            <Link to="/contact" onClick={closeMenu}>
-              Contact
             </Link>
           </li>
           <li>
