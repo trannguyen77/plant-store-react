@@ -1,20 +1,23 @@
-import React from 'react';
-import './products.css';
-import SingleProduct from '../../components/single-product';
-import products from './products-data.json';
+import React from "react";
+import "./products.css";
+import ProductFilter from "../../components/product-filter";
+import ProductList from "../../components/product-list";
+import { ProductConsumer } from "../../context";
 
 function ProductPage() {
   return (
-    <div className='page-container'>
-        <h1 className='page-title'>All Products</h1>
-        <div className='products-container'>
-          {Object.keys(products).map((id)=>{
-            return(
-              <SingleProduct product={products[id]} key={products[id]}/>
-          )})}
+  <ProductConsumer>
+    {(value) => {
+      const { sortedProducts, allProducts} = value;
+      return (
+        <div className="page-container">
+          <h1 className="page-title">All Products</h1>
+          <ProductFilter products={allProducts}/>
+          <ProductList products={sortedProducts}/>
         </div>
-    </div>
-  );
-}
+      );
+    }}
+  </ProductConsumer>
+  )}
 
 export default ProductPage;
