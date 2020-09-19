@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import products from './pages/products/products-data.json';
+import products from "./pages/products/products-data.json";
 
 const ProductContext = React.createContext();
 export default class ProductProvider extends Component {
@@ -7,21 +7,57 @@ export default class ProductProvider extends Component {
     allProducts: [],
     sortedProducts: [],
     featuredProducts: [],
+    type: "all products",
+    price: 0,
+    minPrice: 0,
+    maxPrice: 0,
   };
 
-  //Get featured rooms
   componentDidMount() {
+    //set initial products
     let allProducts = products;
-    let featuredProducts = allProducts.filter(product => product.featured === true);
+    // get featured rooms
+    let featuredProducts = allProducts.filter(
+      (product) => product.featured === true
+    );
+    //get max-price for product filter component
+    let maxPrice = Math.max(...products.map((item) => item.price));
+
     this.setState({
       allProducts,
       featuredProducts,
       sortedProducts: allProducts,
-    })
+      price: maxPrice,
+      maxPrice,
+    });
   }
+
+  //Product filter functions
+  handleChange = (event) => {
+    const name = event.target.name;
+    const value = event.target.value;
+    this.setState(
+      {
+        [name]: value,
+      },
+      this.filterProduct
+    );
+  };
+
+  filterProduct = () => {
+    let { allProducts, type, price } = this.state;
+    let temptProducts = [...allProducts];
+    if (type !== "All products") {
+      temptProducts = temptProducts.filter((product) => product.type === type);
+    }
+    this.setState({ sortedProducts: temptProducts });
+  };
+
   render() {
     return (
-      <ProductContext.Provider value={{...this.state}}>
+      <ProductContext.Provider
+        value={{ ...this.state, handleChange: this.handleChange }}
+      >
         {this.props.children}
       </ProductContext.Provider>
     );

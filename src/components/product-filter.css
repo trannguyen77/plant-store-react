@@ -1,0 +1,7 @@
+.filter-container {
+    min-height: 80px;
+}
+.form-select{
+    width: 150px;
+    overflow: scroll;
+}
