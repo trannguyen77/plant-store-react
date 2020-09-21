@@ -8,7 +8,7 @@ const getUnique = (items, value) => {
 };
 
 function ProductFilter({ products }) {
-  //Get value to filter type
+  //Get value in type filter
   let types = getUnique(products, "type");
   types = ["All products", ...types];
   types = types.map((item, index) => (
@@ -23,16 +23,32 @@ function ProductFilter({ products }) {
     <div className="filter-container">
       <form>
         {/*Select type */}
-        <label htmlFor="type">Product type:</label>
-        <select
-          className="form-select"
-          name="type"
-          id="type"
-          value={type}
-          onChange={handleChange}
-        >
-          {types}
-        </select>
+        <div className="form-field">
+          <label htmlFor="type">Product type:</label>
+          <select
+            className="form-select"
+            name="type"
+            id="type"
+            value={type}
+            onChange={handleChange}
+          >
+            {types}
+          </select>
+        </div>
+        {/*Price range*/}
+        <div className="form-field">
+          <label htmlFor="price">Max price:{price}</label>
+          <input
+            type="range"
+            name="price"
+            id="price"
+            min={minPrice}
+            max={maxPrice}
+            value={price}
+            onChange={handleChange}
+            className="range-input"
+          ></input>
+        </div>
       </form>
     </div>
   );

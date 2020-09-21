@@ -1,7 +1,44 @@
-.filter-container {
-    min-height: 80px;
+.filter-container form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
+.form-field{
+    flex: 0 0 300px;
+    display: flex;
+    align-items: baseline;
+}
+label {
+    flex: 0 0 150px;
+    padding: 0 20px;
+}
+
 .form-select{
+    border: none;
+    padding: 5px 15px;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+.form-select:focus{
+    border: none;
+    outline: none;
+}
+.range-input{
+    -webkit-appearance: none;
+    height: 8px;
     width: 150px;
-    overflow: scroll;
+    border-radius: 4px;
+    background-color: lightgrey;
+    cursor: pointer;
+}
+.range-input:hover{
+    outline: none;
+}
+.range-input::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 8px;
+    width: 8px;
+    background: var(--main-color);
 }
