@@ -1,3 +1,9 @@
+.filter-container {
+    min-height: 80px;
+}
+.form-select{
+    width: 150px;
+}
 .filter-container form {
     display: flex;
     flex-wrap: wrap;
@@ -5,12 +11,12 @@
     justify-content: center;
 }
 .form-field{
-    flex: 0 0 300px;
+    flex: 0 0 350px;
     display: flex;
     align-items: baseline;
 }
 label {
-    flex: 0 0 150px;
+    flex: 0 0 180px;
     padding: 0 20px;
 }
 
@@ -28,7 +34,7 @@ label {
 .range-input{
     -webkit-appearance: none;
     height: 8px;
-    width: 150px;
+    width: 120px;
     border-radius: 4px;
     background-color: lightgrey;
     cursor: pointer;
