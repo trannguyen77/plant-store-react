@@ -16,10 +16,6 @@
     padding: 2%;
 }
 
-.single-product-container :link{
-    text-decoration: none;
-}
-
 .product-card{
     width: 220px;
     height: 90px;

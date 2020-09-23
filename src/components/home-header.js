@@ -5,7 +5,7 @@ import "./home-header.css";
 
 function HeaderSection({ title, des, img, btn }) {
   return (
-    <div className="section-container">
+    <div className="page-container">
       <div className="row-flex">
         <div className="col-half">
           <img className="header-img" src={img} alt="header img"></img>

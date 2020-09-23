@@ -17,7 +17,6 @@ import Home from "./pages/home/home";
 import Cart from "./pages/cart/shopping-cart-container";
 import Search from "./pages/search/search.js";
 import ProductPage from "./pages/products/shop";
-import SingleProductPage from './pages/single product/single-product-page';
 
 function App() {
   //add font to global library
@@ -30,10 +29,9 @@ function App() {
           <NavBar />
           <Switch>
             <Route path="/" exact component={Home} />
-            <Route path="/shop" exact component={ProductPage} />
+            <Route path="/shop" component={ProductPage} />
             <Route path="/cart" component={Cart} />
             <Route path="/search" component={Search} />
-            <Route path='/shop/:id' component={SingleProductPage}/>
           </Switch>
           <Footer />
         </div>
