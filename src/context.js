@@ -7,7 +7,7 @@ export default class ProductProvider extends Component {
     allProducts: [],
     sortedProducts: [],
     featuredProducts: [],
-    type: "All products",
+    type: "all products",
     price: 0,
     minPrice: 0,
     maxPrice: 0,
@@ -47,16 +47,9 @@ export default class ProductProvider extends Component {
   filterProduct = () => {
     let { allProducts, type, price } = this.state;
     let temptProducts = [...allProducts];
-    price = parseInt(price);
-
-    //filter by price
-    temptProducts = temptProducts.filter((product) => product.price <= price);
-
-    //filter by type
     if (type !== "All products") {
       temptProducts = temptProducts.filter((product) => product.type === type);
-    };
-
+    }
     this.setState({ sortedProducts: temptProducts });
   };
 
