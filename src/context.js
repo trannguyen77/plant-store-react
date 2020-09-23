@@ -48,9 +48,9 @@ export default class ProductProvider extends Component {
     let { allProducts, type, price } = this.state;
     let temptProducts = [...allProducts];
 
-//filter by price
+    //filter by price
     temptProducts = temptProducts.filter((product) => product.price <= price);
-//filter by type
+    //filter by type
     if (type !== "All products") {
       temptProducts = temptProducts.filter((product) => product.type === type);
     }
