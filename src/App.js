@@ -17,9 +17,10 @@ import Home from "./pages/home/home";
 import Cart from "./pages/cart/shopping-cart-container";
 import Search from "./pages/search/search.js";
 import ProductPage from "./pages/products/shop";
+import SingleProductPage from "./pages/single-product/single-product-page";
 
 function App() {
-  //add font to global library
+  //add icon to global library
   library.add(faBars, faShoppingBag, faSearch, faTimes);
 
   return (
@@ -29,7 +30,8 @@ function App() {
           <NavBar />
           <Switch>
             <Route path="/" exact component={Home} />
-            <Route path="/shop" component={ProductPage} />
+            <Route path="/shop" exact component={ProductPage} />
+            <Route path='/shop/:id' component={SingleProductPage}/>
             <Route path="/cart" component={Cart} />
             <Route path="/search" component={Search} />
           </Switch>

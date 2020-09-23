@@ -15,6 +15,9 @@
     margin-bottom: 35px;
     padding: 2%;
 }
+.single-product-container a{
+    text-decoration: none;
+}
 
 .product-card{
     width: 220px;
