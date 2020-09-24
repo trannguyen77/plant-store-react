@@ -39,7 +39,7 @@ label {
     background-color: lightgrey;
     cursor: pointer;
 }
-.range-input:hover{
+.range-input:hover,.range-input:focus{
     outline: none;
 }
 .range-input::-webkit-slider-thumb{

@@ -1,0 +1,35 @@
+.product-row-flex{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:100px
+  }
+
+.col-one-third{
+    display: flex;
+    flex: 1 1 30%;
+    justify-content: center;
+    align-items: center;
+  }
+  .col-two-third{
+      display:flex;
+    flex: 2 2 60%;
+  }
+
+
+.product-text-wrapper{
+max-width: 500px;
+margin-left: 40px;
+color: var(--body-text);
+}
+
+.product-text-wrapper h1{
+    color: var(--main-color);
+    font-size: 2.5rem;
+    padding: 0 0 10px 0;
+}
+
+.product-text-wrapper h2{
+    font-size: 1.5rem;
+    padding: 0 0 10px 0;
+}

@@ -17,6 +17,7 @@
   width: 100%;
   max-width: 1300px;
   margin: auto;
+  min-height: 90vh;
 }
 
 .page-title{
@@ -41,12 +42,11 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap-reverse;
-  align-content: stretch;
   justify-content: center;
 }
 .col-half{
   display: flex;
-  flex: 50% none;
+  flex: 1 1 50%;
   justify-content: center;
 }
 

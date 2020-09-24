@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../../components/template-components";
+import Button from "../../components/theme-components/button";
 
 function OrderSummary() {
   return (
