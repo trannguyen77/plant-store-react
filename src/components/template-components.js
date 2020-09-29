@@ -1,10 +1,12 @@
 import React from 'react';
-import './theme-components.css';
+import './template-components.css';
 
-export default function Button({btnLabel}) {
+function Button({btnLabel}) {
     return (
 <button className="template-btn">
     {btnLabel}
       </button>
     );
-};
+}
+
+export default Button;

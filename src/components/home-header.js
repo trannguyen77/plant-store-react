@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Button from "./theme-components/button";
+import Button from "./template-components";
 import "./home-header.css";
 
 function HeaderSection({ title, des, img, btn }) {
   return (
+    <div className="page-container">
       <div className="row-flex">
         <div className="col-half">
           <img className="header-img" src={img} alt="header img"></img>
@@ -19,6 +20,7 @@ function HeaderSection({ title, des, img, btn }) {
           </div>
         </div>
       </div>
+    </div>
   );
 }
 
