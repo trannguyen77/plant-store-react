@@ -8,7 +8,7 @@ function SingleProductPage(props) {
   const targetId = parseInt(props.match.params.id);
   const [thisProduct, setThisProduct] = useState({});
   const { allProducts } = productContext;
-  const { handleInputChange, addToCart } = cartContext;
+  const { handleInputChange, addToCart, increase, decrease } = cartContext;
 
   //get product detail based on id
   const getProduct = (targetId) => {
@@ -29,12 +29,14 @@ function SingleProductPage(props) {
         <h1>{thisProduct.name}</h1>
         <h2>{thisProduct.price}</h2>
         <p>{thisProduct.des}</p>
+
         <input
           type="number"
           defaultValue="0"
-          min="0"
+          min="1"
           onChange={handleInputChange}
         ></input>
+
         <button
           onClick={() => {
             addToCart(thisProduct);
