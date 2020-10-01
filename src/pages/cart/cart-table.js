@@ -1,71 +1,51 @@
-import React, { useContext } from "react";
-import { CartContext } from "../../contexts/CartContext";
+import React from "react";
 
-function CartTable() {
-  const context = useContext(CartContext);
-  const { cart, increase, decrease } = context;
+function CartTable({ cart, increase, decrease }) {
   return (
-    <table>
-      <tr>
-        <th className="item">Items</th>
-        <th className="price">Price</th>
-        <th className="quantity">Quantity</th>
-        <th className="total">Total</th>
-      </tr>
-      {cart.map((item) => {
-        return (
-          <>
-            <tr>
-              <td>{item.name}</td>
-              <td style={{ fontWeight: "bold", textAlign: "center" }}>$50</td>
-              <td className="item-qnt"> {item.quantity} </td>
-              <td className="item-total">${item.price}</td>
-            </tr>
-          </>
-        );
-      })}
-    </table>
-  );
-}
-{
-  /*<div className="cart-container">
+    <div className="cart-container">
       <table>
-        <tr>
-          <th className="item">Items</th>
-          <th className="price">Price</th>
-          <th className="quantity">Quantity</th>
-          <th className="total">Total</th>
-        </tr>
+        <thead>
+          <td className="item">Items</td>
+          <td className="price">Price</td>
+          <td className="quantity">Quantity</td>
+          <td className="total">Total</td>
+        </thead>
         <tbody>
-          <tr>
-            <td>Item 1</td>
-            <td style={{ fontWeight: "bold", textAlign: "center" }}>$50</td>
-            <td className="item-qnt"> 10 </td>
-            <td className="item-total">$500</td>
-          </tr>
-          <tr>
-            <td>Item 1</td>
-            <td style={{ fontWeight: "bold", textAlign: "center" }}>$50</td>
-            <td className="item-qnt"> 10 </td>
-            <td className="item-total">$500</td>
-          </tr>
-          <tr>
-            <td>Item 1</td>
-            <td style={{ fontWeight: "bold", textAlign: "center" }}>$50</td>
-            <td className="item-qnt"> 10 </td>
-            <td className="item-total">$500</td>
-          </tr>
-          <tr>
-            <td>Item 1</td>
-            <td style={{ fontWeight: "bold", textAlign: "center" }}>$50</td>
-            <td className="item-qnt"> 10 </td>
-            <td className="item-total">$500</td>
-          </tr>
+          {cart.map((item) => {
+            return (
+              <tr key={item.id}>
+                <td>{item.name}</td>
+                <td>{item.price}</td>
+                <td className="item-qnt">
+                  <button
+                    className="item-button"
+                    onClick={() => {
+                      decrease(item);
+                    }}
+                  >
+                    -
+                  </button>
+                  {item.quantity}
+                  <button
+                    className="item-button"
+                    onClick={() => {
+                      increase(item);
+                    }}
+                  >
+                    +
+                  </button>
+                </td>
+                <td className="item-total">
+                  ${item.price * item.quantity}
+                  <button className="item-button">x</button>
+                </td>
+              </tr>
+            );
+          })}
         </tbody>
       </table>
     </div>
   );
-}*/
 }
 
 export default CartTable;

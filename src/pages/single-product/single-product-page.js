@@ -8,7 +8,7 @@ function SingleProductPage(props) {
   const targetId = parseInt(props.match.params.id);
   const [thisProduct, setThisProduct] = useState({});
   const { allProducts } = productContext;
-  const { handleInputChange, addToCart, increase, decrease } = cartContext;
+  const { handleInputChange, addToCart } = cartContext;
 
   //get product detail based on id
   const getProduct = (targetId) => {
