@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import products from "./pages/products/products-data.json";
+import products from "../pages/products/products-data.json";
 
 const ProductContext = React.createContext();
 export default class ProductProvider extends Component {
@@ -22,7 +22,6 @@ export default class ProductProvider extends Component {
     );
     //get max-price for product filter component
     let maxPrice = Math.max(...products.map((item) => item.price));
-
     this.setState({
       allProducts,
       featuredProducts,
@@ -31,7 +30,6 @@ export default class ProductProvider extends Component {
       maxPrice,
     });
   }
-
   //Product filter functions
   handleChange = (event) => {
     const name = event.target.name;
@@ -60,7 +58,10 @@ export default class ProductProvider extends Component {
   render() {
     return (
       <ProductContext.Provider
-        value={{ ...this.state, handleChange: this.handleChange }}
+        value={{
+          ...this.state,
+          handleChange: this.handleChange,
+        }}
       >
         {this.props.children}
       </ProductContext.Provider>
