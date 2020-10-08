@@ -1,6 +1,6 @@
 import React from "react";
 
-function CartTable({ cart, increase, decrease }) {
+function CartTable({ cart, increase, decrease, removeCart }) {
   return (
     <div className="cart-container">
       <table>
@@ -19,25 +19,26 @@ function CartTable({ cart, increase, decrease }) {
                 <td className="item-qnt">
                   <button
                     className="item-button"
-                    onClick={() => {
-                      decrease(item);
-                    }}
+                    onClick={() => decrease(item)}
                   >
                     -
                   </button>
                   {item.quantity}
                   <button
                     className="item-button"
-                    onClick={() => {
-                      increase(item);
-                    }}
+                    onClick={() => increase(item)}
                   >
                     +
                   </button>
                 </td>
                 <td className="item-total">
                   ${item.price * item.quantity}
-                  <button className="item-button">x</button>
+                  <button
+                    className="item-button"
+                    onClick={() => removeCart(item)}
+                  >
+                    x
+                  </button>
                 </td>
               </tr>
             );

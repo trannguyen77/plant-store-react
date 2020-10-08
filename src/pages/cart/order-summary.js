@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "../../components/template-components";
 
-function OrderSummary({ subTotal, shipping, vat }) {
+function OrderSummary({ subTotal, shipping, vat, checkout }) {
   let grandTotal = subTotal + subTotal * vat + shipping;
   return (
     <div className="order-container">
@@ -35,7 +35,7 @@ function OrderSummary({ subTotal, shipping, vat }) {
           </div>
         </div>
         <div className="checkout-btn">
-          <Button btnLabel="Check Out" />
+          <Button onClick={() => checkout()} btnLabel="Check Out" />
         </div>
       </div>
     </div>
