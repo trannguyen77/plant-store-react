@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
+import { CartContext } from "../../contexts/CartContext";
 import icon from "./logo-icon.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./navbar.css";
 
 function NavBar() {
+  const context = useContext(CartContext);
+  let { subTotal } = context;
   //show nav on mobile
   const [navClick, setNavClick] = useState(false);
   const handleNavClick = () => setNavClick(!navClick);
@@ -39,7 +42,7 @@ function NavBar() {
           <li>
             <Link to="/cart" onClick={closeMenu}>
               <FontAwesomeIcon icon="shopping-bag" />
-              <span> 0</span>
+              <span>(${subTotal})</span>
             </Link>
           </li>
           <li>

@@ -6,14 +6,33 @@ import OrderSummary from "./order-summary";
 
 function ShoppingCart() {
   const context = useContext(CartContext);
-  let { cart, subTotal, vat, shipping, increase, decrease } = context;
+  let {
+    cart,
+    subTotal,
+    vat,
+    shipping,
+    increase,
+    decrease,
+    removeCart,
+    checkout,
+  } = context;
 
   return (
     <div className="page-container">
       <h1 className="page-title">Shopping Cart</h1>
       <div className="shopping-container">
-        <CartTable cart={cart} increase={increase} decrease={decrease} />
-        <OrderSummary vat={vat} shipping={shipping} subTotal={subTotal} />
+        <CartTable
+          cart={cart}
+          increase={increase}
+          decrease={decrease}
+          removeCart={removeCart}
+        />
+        <OrderSummary
+          vat={vat}
+          shipping={shipping}
+          subTotal={subTotal}
+          checkout={checkout}
+        />
       </div>
     </div>
   );

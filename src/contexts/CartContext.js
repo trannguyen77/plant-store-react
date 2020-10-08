@@ -17,7 +17,6 @@ export default class CartProvider extends Component {
     this.getData(cart, localCart);
   }
   componentDidUpdate(prevProps, prevState) {
-    console.log(prevState.cart !== this.state.cart);
     if (prevState.cart !== this.state.cart) {
       this.countTotal();
     }
@@ -47,7 +46,6 @@ export default class CartProvider extends Component {
       total += item.quantity * item.price;
       return total;
     });
-    console.log(total);
     this.setState({ subTotal: total });
   };
 
@@ -65,6 +63,7 @@ export default class CartProvider extends Component {
     this.setState({
       cart: tempCart,
     });
+    alert("The product has been added to cart.");
   };
 
   //increase & decrease cart quantity
@@ -83,11 +82,31 @@ export default class CartProvider extends Component {
     let { cart } = this.state;
     let tempCart = [...cart];
     let tempItem = tempCart.find((tempItem) => tempItem === item);
-    tempItem.quantity -= 1;
+    if (tempItem.quantity > 1) {
+      tempItem.quantity -= 1;
+    }
     this.setState({
       cart: tempCart,
     });
     localStorage.setItem("cart", JSON.stringify(cart));
+  };
+  //remove product from cart
+  removeCart = (item) => {
+    let { cart } = this.state;
+    let tempCart = [...cart];
+    tempCart.splice(tempCart.indexOf(item), 1);
+    localStorage.setItem("cart", JSON.stringify(tempCart));
+    this.setState({
+      cart: tempCart,
+    });
+  };
+  //checkout
+  checkout = () => {
+    localStorage.clear();
+    this.setState({
+      cart: [],
+    });
+    alert("Thank you for purchasing");
   };
 
   render() {
@@ -99,6 +118,8 @@ export default class CartProvider extends Component {
           addToCart: this.addToCart,
           increase: this.increase,
           decrease: this.decrease,
+          removeCart: this.removeCart,
+          checkout: this.checkout,
           countTotal: this.countTotal,
         }}
       >
