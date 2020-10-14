@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { ProductContext } from "../contexts/ProductContext";
+import { Link } from "react-router-dom";
 import SingleProduct from "./single-product";
+import Button from "./template-components";
 
 class FeaturedProducts extends Component {
   static contextType = ProductContext;
@@ -13,6 +15,11 @@ class FeaturedProducts extends Component {
           {featuredProducts.map((product) => {
             return <SingleProduct product={product} key={product.id} />;
           })}
+        </div>
+        <div className="all-product">
+          <Link to="/shop">
+            <Button btnLabel="All Products" align="center" />
+          </Link>
         </div>
       </div>
     );

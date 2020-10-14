@@ -12,6 +12,7 @@ import {
   faTimes,
 } from "@fortawesome/free-solid-svg-icons";
 //Import components
+import ScrollToTop from "./ScrollToTopRouter";
 import NavBar from "../components/navigation/navbar";
 import Footer from "../components/footer";
 import Home from "../pages/home/home";
@@ -28,17 +29,19 @@ function App() {
     <ProductContext>
       <CartContext>
         <Router>
-          <div className="App">
-            <NavBar />
-            <Switch>
-              <Route path="/" exact component={Home} />
-              <Route path="/shop" exact component={ProductPage} />
-              <Route path="/shop/:id" component={SingleProductPage} />
-              <Route path="/cart" component={Cart} />
-              <Route path="/search" component={Search} />
-            </Switch>
-            <Footer />
-          </div>
+          <ScrollToTop>
+            <div className="App">
+              <NavBar />
+              <Switch>
+                <Route path="/" exact component={Home} />
+                <Route path="/shop" exact component={ProductPage} />
+                <Route path="/shop/:id" component={SingleProductPage} />
+                <Route path="/cart" component={Cart} />
+                <Route path="/search" component={Search} />
+              </Switch>
+              <Footer />
+            </div>
+          </ScrollToTop>
         </Router>
       </CartContext>
     </ProductContext>
