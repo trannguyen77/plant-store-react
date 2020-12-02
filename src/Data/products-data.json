@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "name": "Marble Queen Pothos",
+    "price": 35,
+    "featured": true,
+    "des": "Give your home office an upgrade! The Pothos Marble and its quick growing vines full of variegated green and white leaves will make any space look more lush. It is a great low maintenance choice for beginners.",
+    "type": "Live plants",
+    "img": "https://cdn.shopify.com/s/files/1/0150/6262/products/the-sill_marble-queen-pothos_variant_medium_hyde_blush_360x.jpg?v=1597784571"
+  },
+
+  {
+    "id": 2,
+    "name": "Fiddle Leaf Fig",
+    "price": 59,
+    "featured": false,
+    "des": "The Fiddle Leaf Fig is famous for its broad, vibrant green leaves with prominent veining. It prefers a stable environment and can be fickle when temps fluctuate. Keep it in bright light, and water about once every 1–2 weeks.",
+    "type": "Live plants",
+    "img": "//cdn.shopify.com/s/files/1/0150/6262/products/the-sill_fiddle-leaf-fig_variant_balboa_cream_768x.jpg?v=1606161057"
+  },
+
+  {
+    "id": 3,
+    "name": "Monstera Deliciosa",
+    "price": 69,
+    "featured": true,
+    "des": "Nicknamed the “swiss cheese plant”, the Monstera deliciosa is famous for its quirky natural leaf holes. These holes are theorized to maximize sun fleck capture on the forest floor. Depending on the season and maturity of the plant, your Monstera could arrive with no holes just yet. Arrives in a nursery grow pot nestled inside our ceramic planter.",
+    "type": "Live plants",
+    "img": "//cdn.shopify.com/s/files/1/0150/6262/products/the-sill_monstera-deliciosa_variant_medium_hyde_blush_768x.jpg?v=1606770005"
+  },
+  {
+    "id": 4,
+    "name": "Faux Rex Begonia",
+    "price": 75,
+    "featured": true,
+    "des": "Our artificial Rex Begonia gives your space a long-lasting pop of color with vibrant purple veining and a slight iridescent sheen. It comes paired with our Grant ceramic pot for a realistic look.",
+    "type": "Reserved Plans",
+    "img": "//cdn.shopify.com/s/files/1/0150/6262/products/the-sill_faux-rex-begonia_variant_small_grant_blush_4620eff4-1c45-41fb-a636-ebfe69e0ba0e_768x.jpg?v=1605804340"
+  },
+  {
+    "id": 5,
+    "name": "Faux Calathea Medallion",
+    "price": 199,
+    "featured": true,
+    "des": "Enhance a dark corner with this 3.65' tall patterned faux Calathea Medallion, ideal for adding color and height. Paired with your choice of our ceramic (Prospect) and fiberglass (Pallas) floor planters for a more polished look.",
+    "type": "Reserved Plans",
+    "img": "//cdn.shopify.com/s/files/1/0150/6262/products/the-sill_faux-calathea-medallion_variant_large_pallas_white_768x.jpg?v=1604430753"
+  },
+  {
+    "id": 6,
+    "name": "Macramé Plant Hanger",
+    "price": 69,
+    "featured": false,
+    "des": "These macramé plant hangers are a modern spin on the traditional. Boasting gorgeous mid-century inspired colors, these hangers are a great way to merge your love for home decor and plant-care. Pair it with your favorite hanging plant in one of our small or medium planters and you’re good to go.",
+    "type": "Accessories",
+    "img": "//cdn.shopify.com/s/files/1/0150/6262/products/the-sill_macrame-plant-hanger_variant_sage_768x.jpg?v=1604605217"
+  },
+  {
+    "id": 7,
+    "name": "Sunrise Vase",
+    "price": 46,
+    "featured": true,
+    "des": "Named for the beautiful details found in ambrosia maple and its circular shape, the Maple Sunrise Propagation Vase adds a minimalist-style focal point to your walls. Decorate and propagate your houseplants at the same time",
+    "type": "Accessories",
+    "img": "//cdn.shopify.com/s/files/1/0150/6262/products/the-sill_maple-sunrise-propagation-vase_variant_01_768x.jpg?v=1594934102"
+  },
+  {
+    "id": 8,
+    "name": "Shangri-La Rose",
+    "price": 16,
+    "featured": true,
+    "des": "This Rose Adaptogen has a delicate, fragrant taste between its rosy notes and slightly tangy, fruity notes. Naturally caffeine free, vegan and rich in antioxidants, you'll watch in wonder as the flower unfurls. Pour hot water over 1 flower in a cup and use bamboo tongs to keep the flower submerged. As you infuse, enjoy the visual splendor then sip and enjoy.",
+    "type": "Accessories",
+    "img": "//cdn.shopify.com/s/files/1/0150/6262/products/the-sill_Shangri-La-Rose-Flower-Adaptogen_gallery_01_768x.jpg?v=1603803689"
+  },
+  {
+    "id": 9,
+    "name": "Holiday Wreath",
+    "price": 190,
+    "featured": true,
+    "des": "Spruce up your space for the holiday season with our live evergreen wreath. Made from fraser fir, white pine and juniper, it will add both festive fragrance and charm to your home. Wreath measures 24 inches in diameter.",
+    "type": "Gift sets",
+    "img": "//cdn.shopify.com/s/files/1/0150/6262/products/the-sill_wreath_variant_01_768x.jpg?v=1604956957"
+  },
+  {
+    "id": 10,
+    "name": "Holiday Gift",
+    "price": 10,
+    "featured": false,
+    "des": "Make any plant a gift with a Holiday Gift Message Pop! Choose between two festive sayings that can be popped directly into your plant upon arrival for the ultimate festive feeling. Ceramic pops measure 5.5' tall x 1.5' wide.",
+    "type": "Gift sets",
+    "img": "//cdn.shopify.com/s/files/1/0150/6262/products/the-sill_holiday-message-pops_variant_peace-joy-plants_01_768x.jpg?v=1604604717"
+  },
+  {
+    "id": 11,
+    "name": "Norfolk Island Pine",
+    "price": 45,
+    "featured": false,
+    "des": "Decorate your home for the holidays with our Norfolk Island Pine Tree. A lively addition to your home all year round, the Norfolk is actually a tropical evergreen native to Norfolk Island in the Pacific Ocean. For a festive vibe, consider decorating it with ornaments of your choice.",
+    "type": "Live plants",
+    "img": "//cdn.shopify.com/s/files/1/0150/6262/products/the-sill_norfolk-island-pine_variant_small_balboa_cream_768x.jpg?v=1606354997"
+  },
+  {
+    "id": 12,
+    "name": "Succulent Assortment",
+    "price": 35,
+    "featured": true,
+    "des": "This exclusive set is perfect for a small windowsill, and hard to kill. You’ll get a variety of six potted succulents for the price of five. That’s one free potted succulent to gift to a friend! We will do our best to match your assortment to what is pictured. ",
+    "type": "Reserved Plans",
+    "img": "//cdn.shopify.com/s/files/1/0150/6262/products/the-sill_potted-succulent-assortment_variant_ezra_black_768x.jpg?v=1606784461"
+  }
+]

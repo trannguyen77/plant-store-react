@@ -12,7 +12,7 @@ import {
   faTimes,
 } from "@fortawesome/free-solid-svg-icons";
 //Import components
-import ScrollToTop from "./ScrollToTopRouter";
+import ScrollToTop from "../utils/ScrollToTopRouter";
 import NavBar from "../components/navigation/navbar";
 import Footer from "../components/footer";
 import Home from "../pages/home/home";

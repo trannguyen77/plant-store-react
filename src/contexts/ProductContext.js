@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import products from "../pages/products/products-data.json";
+import products from "../Data/products-data.json";
 
 const ProductContext = React.createContext();
 export default class ProductProvider extends Component {
@@ -16,7 +16,7 @@ export default class ProductProvider extends Component {
   componentDidMount() {
     //set initial products
     let allProducts = products;
-    // get featured rooms
+    //get featured products
     let featuredProducts = allProducts.filter(
       (product) => product.featured === true
     );

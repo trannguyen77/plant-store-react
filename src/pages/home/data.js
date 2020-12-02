@@ -1,7 +1,7 @@
 export const headerData = {
-  title: "The best plant store",
+  title: "Plants Make People Merry!",
   des:
-    "Lorem ipsum dolor sit amet, in dolores blandit intellegat nam. His no putent dolores, iusto omittantur cu mei, ea mel rebum similique reprehendunt. Mei voluptaria incorrupte et, id stet affert ius. Eum ei erant putant tincidunt, pro id quem illud evertitur.",
-  img: '/img/header-img.jpg',
-  btn: "About us",
+    "Our plants are sourced from local growers to ensure the highest quality and to support family-owned businesses. We guarantee plants arrive in happy, healthy condition, or we replace them for free.",
+  img: "/img/header-img.jpg",
+  btn: "Shop now",
 };
