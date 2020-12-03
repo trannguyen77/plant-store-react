@@ -5,7 +5,7 @@
     "price": 35,
     "featured": true,
     "des": "Give your home office an upgrade! The Pothos Marble and its quick growing vines full of variegated green and white leaves will make any space look more lush. It is a great low maintenance choice for beginners.",
-    "type": "Live plants",
+    "type": "Live Plants",
     "img": "https://cdn.shopify.com/s/files/1/0150/6262/products/the-sill_marble-queen-pothos_variant_medium_hyde_blush_360x.jpg?v=1597784571"
   },
 
@@ -15,7 +15,7 @@
     "price": 59,
     "featured": false,
     "des": "The Fiddle Leaf Fig is famous for its broad, vibrant green leaves with prominent veining. It prefers a stable environment and can be fickle when temps fluctuate. Keep it in bright light, and water about once every 1–2 weeks.",
-    "type": "Live plants",
+    "type": "Live Plants",
     "img": "//cdn.shopify.com/s/files/1/0150/6262/products/the-sill_fiddle-leaf-fig_variant_balboa_cream_768x.jpg?v=1606161057"
   },
 
@@ -25,7 +25,7 @@
     "price": 69,
     "featured": true,
     "des": "Nicknamed the “swiss cheese plant”, the Monstera deliciosa is famous for its quirky natural leaf holes. These holes are theorized to maximize sun fleck capture on the forest floor. Depending on the season and maturity of the plant, your Monstera could arrive with no holes just yet. Arrives in a nursery grow pot nestled inside our ceramic planter.",
-    "type": "Live plants",
+    "type": "Live Plants",
     "img": "//cdn.shopify.com/s/files/1/0150/6262/products/the-sill_monstera-deliciosa_variant_medium_hyde_blush_768x.jpg?v=1606770005"
   },
   {
@@ -34,7 +34,7 @@
     "price": 75,
     "featured": true,
     "des": "Our artificial Rex Begonia gives your space a long-lasting pop of color with vibrant purple veining and a slight iridescent sheen. It comes paired with our Grant ceramic pot for a realistic look.",
-    "type": "Reserved Plans",
+    "type": "Reserved Plants",
     "img": "//cdn.shopify.com/s/files/1/0150/6262/products/the-sill_faux-rex-begonia_variant_small_grant_blush_4620eff4-1c45-41fb-a636-ebfe69e0ba0e_768x.jpg?v=1605804340"
   },
   {
@@ -43,7 +43,7 @@
     "price": 199,
     "featured": true,
     "des": "Enhance a dark corner with this 3.65' tall patterned faux Calathea Medallion, ideal for adding color and height. Paired with your choice of our ceramic (Prospect) and fiberglass (Pallas) floor planters for a more polished look.",
-    "type": "Reserved Plans",
+    "type": "Reserved Plants",
     "img": "//cdn.shopify.com/s/files/1/0150/6262/products/the-sill_faux-calathea-medallion_variant_large_pallas_white_768x.jpg?v=1604430753"
   },
   {
@@ -97,7 +97,7 @@
     "price": 45,
     "featured": false,
     "des": "Decorate your home for the holidays with our Norfolk Island Pine Tree. A lively addition to your home all year round, the Norfolk is actually a tropical evergreen native to Norfolk Island in the Pacific Ocean. For a festive vibe, consider decorating it with ornaments of your choice.",
-    "type": "Live plants",
+    "type": "Live Plants",
     "img": "//cdn.shopify.com/s/files/1/0150/6262/products/the-sill_norfolk-island-pine_variant_small_balboa_cream_768x.jpg?v=1606354997"
   },
   {
@@ -106,7 +106,43 @@
     "price": 35,
     "featured": true,
     "des": "This exclusive set is perfect for a small windowsill, and hard to kill. You’ll get a variety of six potted succulents for the price of five. That’s one free potted succulent to gift to a friend! We will do our best to match your assortment to what is pictured. ",
-    "type": "Reserved Plans",
+    "type": "Reserved Plants",
     "img": "//cdn.shopify.com/s/files/1/0150/6262/products/the-sill_potted-succulent-assortment_variant_ezra_black_768x.jpg?v=1606784461"
+  },
+  {
+    "id": 13,
+    "name": "Coffee Plant",
+    "price": 65,
+    "featured": false,
+    "des": "You might be surprised to know the same plant that grows your morning coffee beans is a popular, low maintenance houseplant! Although it’s unlikely this plant will produce berries inside, its attractive shiny green foliage will liven up any interior space. ",
+    "type": "Reserved Plants",
+    "img": "//cdn.shopify.com/s/files/1/0150/6262/products/the-sill_coffee-plant_variant_small_grant_black_768x.jpg?v=1606833929"
+  },
+  {
+    "id": 14,
+    "name": "Sansevieria Moonshine",
+    "price": 75,
+    "featured": false,
+    "des": "The Sansevieria Moonshine is a variety of snake plant popular for its succulent characteristics, compact shape, and unique silvery green foliage. A multitasker, the snake plant purifies indoor air by removing toxins such as formaldehyde, xylene, and toluene.",
+    "type": "Reserved Plants",
+    "img": "//cdn.shopify.com/s/files/1/0150/6262/products/the-sill_snake-plant-moonshine_variant_grant_blush_768x.jpg?v=1606159783"
+  },
+  {
+    "id": 15,
+    "name": "Money Tree Plant",
+    "price": 44,
+    "featured": false,
+    "des": "The Money Tree is a popular houseplant because of its resilience, ease of growth, and fun braided trunk.",
+    "type": "Live Plants",
+    "img": "//cdn.shopify.com/s/files/1/0150/6262/products/the-sill_money-tree_variant_small_grant_black_768x.jpg?v=1606159548"
+  },
+  {
+    "id": 16,
+    "name": "Parlor Palm",
+    "price": 92,
+    "featured": false,
+    "des": "The Parlor Palm is a favorite easy-care palm with tropical fronds known for its air purifying qualities. Arrives in a nursery grow pot nestled inside our ceramic planter.",
+    "type": "Live Plants",
+    "img": "//cdn.shopify.com/s/files/1/0150/6262/products/the-sill_parlor-palm_variant_small_hyde_terracotta_768x.jpg?v=1606833938"
   }
 ]

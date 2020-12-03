@@ -1,7 +1,45 @@
-.footer{
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    height: 100px;
-    background: linear-gradient(180deg, #3B988E 0%, #336D70 100%);
+.footer {
+  width: 100%;
+  background: linear-gradient(180deg, #3b988e 0%, #336d70 100%);
+  padding: 20px 0;
+}
+.content-container {
+  max-width: 1153px;
+  display: flex;
+  margin: 0 auto;
+}
+.col-one-fourth {
+  flex: 25% 1;
+  color: white;
+  line-height: 1.5rem;
+}
+.store-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.icon-footer {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 7px;
+  vertical-align: middle;
+}
+
+@media only screen and (max-width: 800px) {
+  .content-container {
+    max-width: 80%;
+    flex-wrap: wrap;
+  }
+  .col-one-fourth {
+    flex: 50% 1;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .content-container {
+    max-width: 80%;
+    flex-wrap: wrap;
+  }
+  .col-one-fourth {
+    flex: 100% 1;
+  }
 }
